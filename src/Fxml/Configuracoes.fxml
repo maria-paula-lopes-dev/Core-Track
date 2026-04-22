@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anConfiguracoes" prefHeight="700.0" prefWidth="1100.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ConfiguracoesController">
+    <stylesheets>
+        <URL value="@/Css/configuracoes.css" />
+    </stylesheets>
+   <children>
+      <VBox fx:id="vBoxOpcoes" alignment="TOP_CENTER" layoutX="94.0" prefHeight="706.0" prefWidth="218.0" stylesheets="@../Css/configuracoes.css">
+         <children>
+            <Label fx:id="lblConta" prefHeight="32.0" prefWidth="192.0" stylesheets="@../Css/configuracoes.css" text="Conta Pessoal" textFill="#b4b4b4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="27.0" />
+               </VBox.margin>
+            </Label>
+            <GridPane alignment="CENTER" prefHeight="109.0" prefWidth="178.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.19998168945312" minWidth="10.0" prefWidth="46.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="132.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="btnPerfil" alignment="CENTER" mnemonicParsing="false" onAction="#btnPerfilAction" prefHeight="31.0" prefWidth="113.0" stylesheets="@../Css/configuracoes.css" text="Perfil" GridPane.columnIndex="1" />
+                  <Button fx:id="btnNotificacoes" alignment="CENTER" layoutX="95.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnNotificacoesAction" prefHeight="31.0" prefWidth="113.0" stylesheets="@../Css/configuracoes.css" text="Notificações" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ImageView fx:id="imgPerfil" fitHeight="51.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/configPerfil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgNotificacoes" fitHeight="51.0" fitWidth="40.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../imagens/ConfgNoti.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox fx:id="vBoxLateralConfiguracoes" alignment="TOP_CENTER" layoutX="-6.0" prefHeight="706.0" prefWidth="106.0" stylesheets="@../Css/configuracoes.css">
+         <children>
+            <ImageView fx:id="imgCoreTrack" fitHeight="60.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../imagens/CoreTrack.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnHome" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnHomeAction" prefHeight="30.0" prefWidth="86.0" stylesheets="@../Css/configuracoes.css">
+               <graphic>
+                  <ImageView fx:id="imgInicial" fitHeight="75.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnNotificacoesIcon" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="75.0" mnemonicParsing="false" onAction="#btnNotificacoesIconAction" prefHeight="30.0" prefWidth="86.0" stylesheets="@../Css/configuracoes.css">
+               <graphic>
+                  <ImageView fx:id="imgNotificacoes" fitHeight="75.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/Notoficacoes-msg.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnGraficos" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnGraficosAction" prefHeight="30.0" prefWidth="86.0" stylesheets="@../Css/configuracoes.css">
+               <graphic>
+                  <ImageView fx:id="imgGraficos" fitHeight="75.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/Graficos.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnRelatorios" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="184.0" mnemonicParsing="false" onAction="#btnRelatoriosAction" prefHeight="30.0" prefWidth="86.0" stylesheets="@../Css/configuracoes.css">
+               <graphic>
+                  <ImageView fx:id="imgRelatorios" fitHeight="75.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/Relatorios.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnSaibaMais" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnSaibaMaisAction" prefHeight="30.0" prefWidth="86.0" stylesheets="@../Css/configuracoes.css">
+               <graphic>
+                  <ImageView fx:id="imgSaibaMais" fitHeight="75.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/LupaSM.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox fx:id="vBoxConfiguracoesPrincipal" alignment="TOP_CENTER" layoutX="290.0" prefHeight="706.0" prefWidth="810.0" stylesheets="@../Css/configuracoes.css">
+         <children>
+            <Label fx:id="lblTitulo" alignment="CENTER" prefHeight="59.0" prefWidth="770.0" stylesheets="@../Css/notificacoes.css" text="Configurações" />
+            <Line endX="591.5762329101562" endY="1.656747579574585" startX="-149.6329803466797" startY="1.656760573387146" stroke="#00df81" />
+            <HBox fx:id="hBoxPerfil" alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/configuracoes.css">
+               <VBox.margin>
+                  <Insets left="30.0" right="20.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <VBox fx:id="vBoxFotoPerfil" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <ImageView fx:id="imgPerfil" fitHeight="90.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="lblFotoPrfil" alignment="CENTER" prefHeight="50.0" prefWidth="228.0" stylesheets="@../Css/configuracoes.css" text="Foto de Perfil" textFill="#b4b4b4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Button fx:id="btnRemover" alignment="CENTER" mnemonicParsing="false" onAction="#btnRemoverAction" prefHeight="31.0" prefWidth="123.0" stylesheets="@../Css/configuracoes.css" text="Remover Foto">
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnSelecionar" alignment="CENTER" layoutX="135.0" layoutY="54.0" mnemonicParsing="false" onAction="#btnSelecionarAction" prefHeight="33.0" prefWidth="143.0" stylesheets="@../Css/configuracoes.css" text="Selecionar foto">
+                     <HBox.margin>
+                        <Insets left="10.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Line endX="591.5762329101562" endY="1.656747579574585" layoutX="194.0" layoutY="68.0" startX="-149.6329803466797" startY="1.656760573387146" stroke="#949494">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Line>
+            <HBox fx:id="hBoxNome" alignment="CENTER_LEFT" layoutX="20.0" layoutY="81.0" prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/configuracoes.css">
+               <children>
+                  <VBox fx:id="vBoxNome" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="254.0">
+                     <children>
+                        <Label fx:id="lblNome" prefHeight="32.0" prefWidth="140.0" stylesheets="@../Css/configuracoes.css" text="Nome" textFill="#b4b4b4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lblNomeConfig" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="255.0" stylesheets="@../Css/configuracoes.css" text="Maria Puala Lopes Silva" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Button fx:id="btnEditarNome" alignment="CENTER" mnemonicParsing="false" onAction="#btnEditarNomeAction" prefHeight="31.0" prefWidth="123.0" stylesheets="@../Css/configuracoes.css" text="Editar">
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="20.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Line endX="591.5762329101562" endY="1.656747579574585" layoutX="194.0" layoutY="216.0" startX="-149.6329803466797" startY="1.656760573387146" stroke="#949494">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Line>
+            <HBox fx:id="hBoxEmail" alignment="CENTER_LEFT" layoutX="10.0" layoutY="212.0" prefHeight="100.0" prefWidth="200.0" stylesheets="@../Css/configuracoes.css">
+               <children>
+                  <VBox fx:id="vBoxEmail" alignment="CENTER_LEFT" prefHeight="62.0" prefWidth="254.0">
+                     <children>
+                        <Label fx:id="lblEmail" prefHeight="32.0" prefWidth="251.0" stylesheets="@../Css/configuracoes.css" text="E-mal" textFill="#b4b4b4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lblEmailConfig" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="247.0" stylesheets="@../Css/configuracoes.css" text="maria.paula.silva@ufv.br" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Button fx:id="btnEditarEmail" alignment="CENTER" mnemonicParsing="false" onAction="#btnEditarEmailAction" prefHeight="31.0" prefWidth="123.0" stylesheets="@../Css/configuracoes.css" text="Editar">
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="20.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

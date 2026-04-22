@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="anConfigNotificaoes" prefHeight="700.0" prefWidth="1080.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ConfigNotificacoesController">
+    <stylesheets>
+        <URL value="@/Css/confignotificacoes.css" />
+    </stylesheets>
+   <children>
+      <VBox fx:id="vBoxOpcoes" alignment="TOP_CENTER" layoutX="108.0" layoutY="5.0" prefHeight="706.0" prefWidth="222.0" stylesheets="@../Css/configuracoes.css">
+         <children>
+            <Label fx:id="lblConta" prefHeight="32.0" prefWidth="192.0" stylesheets="@../Css/configuracoes.css" text="Conta Pessoal" textFill="#b4b4b4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="27.0" />
+               </VBox.margin>
+            </Label>
+            <GridPane alignment="CENTER" prefHeight="109.0" prefWidth="178.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.19998168945312" minWidth="10.0" prefWidth="51.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="131.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Button fx:id="btnPerfil" alignment="CENTER" mnemonicParsing="false" onAction="#btnPerfilAction" prefHeight="31.0" prefWidth="113.0" stylesheets="@../Css/configuracoes.css" text="Perfil" GridPane.columnIndex="1" />
+                  <Button fx:id="btnNotificacoes" alignment="CENTER" layoutX="95.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnNotificacoesAction" prefHeight="31.0" prefWidth="113.0" stylesheets="@../Css/configuracoes.css" text="Notificações" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ImageView fx:id="imgPerfil" fitHeight="51.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/configPerfil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imgNotificacoes" fitHeight="51.0" fitWidth="40.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../imagens/ConfgNoti.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </GridPane>
+         </children>
+      </VBox>
+      <VBox fx:id="vBoxLateralConfiguracoes" alignment="TOP_CENTER" layoutX="7.0" layoutY="5.0" prefHeight="706.0" prefWidth="106.0" stylesheets="@../Css/configuracoes.css">
+         <children>
+            <ImageView fx:id="imgCoreTrack" fitHeight="60.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../imagens/CoreTrack.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnHome" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btnHomeAction" prefHeight="30.0" prefWidth="86.0" stylesheets="@../Css/confignotificacoes.css">
+               <graphic>
+                  <ImageView fx:id="imgInicial" fitHeight="75.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnNotificacoesIcon" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="75.0" mnemonicParsing="false" onAction="#btnNotificacoesIconAction" prefHeight="30.0" prefWidth="86.0" stylesheets="@../Css/confignotificacoes.css">
+               <graphic>
+                  <ImageView fx:id="imgNotificacoes" fitHeight="75.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/Notoficacoes-msg.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnGraficos" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="130.0" mnemonicParsing="false" onAction="#btnGraficosAction" prefHeight="30.0" prefWidth="86.0" stylesheets="@../Css/confignotificacoes.css">
+               <graphic>
+                  <ImageView fx:id="imgGraficos" fitHeight="75.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/Graficos.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnRelatorios" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="184.0" mnemonicParsing="false" onAction="#btnRelatoriosAction" prefHeight="30.0" prefWidth="86.0" stylesheets="@../Css/confignotificacoes.css">
+               <graphic>
+                  <ImageView fx:id="imgRelatorios" fitHeight="75.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/Relatorios.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnSaibaMais" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="237.0" mnemonicParsing="false" onAction="#btnSaibaMaisAction" prefHeight="30.0" prefWidth="86.0" stylesheets="@../Css/confignotificacoes.css">
+               <graphic>
+                  <ImageView fx:id="imgSaibaMais" fitHeight="75.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagens/LupaSM.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox fx:id="vBoxConfiguracoesPrincipal" alignment="TOP_CENTER" layoutX="307.0" layoutY="5.0" prefHeight="706.0" prefWidth="810.0" stylesheets="@../Css/configuracoes.css">
+         <children>
+            <Label fx:id="lblTitulo" alignment="CENTER" prefHeight="59.0" prefWidth="770.0" stylesheets="@../Css/notificacoes.css" text="Configurações" />
+            <Line endX="591.5762329101562" endY="1.656747579574585" startX="-149.6329803466797" startY="1.656760573387146" stroke="#00df81" />
+            <Label fx:id="lblNotificacoes" layoutX="30.0" layoutY="10.0" prefHeight="59.0" prefWidth="770.0" stylesheets="@../Css/confignotificacoes.css" text="NOTIFICAÇÕES" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="35.0" right="15.0" />
+               </VBox.margin>
+            </Label>
+            <Text fx:id="txtNotificacoes" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Sempre enviaremos notificações com as informações mais relevantes para um bom funcionamento do seu sistema, mas você pode controlar o conteúdo de informações que recebe." wrappingWidth="747.2976839542389">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Text>
+            <Line endX="591.5762329101562" endY="1.656747579574585" layoutX="194.0" layoutY="68.0" startX="-149.6329803466797" startY="1.656760573387146" stroke="#949494">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Line>
+            <Label fx:id="lblHabilitacoes" layoutX="45.0" layoutY="71.0" prefHeight="59.0" prefWidth="770.0" stylesheets="@../Css/confignotificacoes.css" text="HABILITAÇÕES" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="35.0" right="15.0" />
+               </VBox.margin>
+            </Label>
+            <HBox fx:id="hBoxEmail" alignment="CENTER_LEFT" layoutX="10.0" layoutY="212.0" prefHeight="55.0" prefWidth="760.0" stylesheets="@../Css/configuracoes.css">
+               <children>
+                  <Button fx:id="btnAtivar" alignment="CENTER" mnemonicParsing="false" onAction="#btnAtivarAction" prefHeight="31.0" prefWidth="123.0" stylesheets="@../Css/confignotificacoes.css" text="Ativar">
+                     <HBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnDesativar" alignment="CENTER" layoutX="25.0" layoutY="44.0" mnemonicParsing="false" onAction="#btbDesativarAction" prefHeight="31.0" prefWidth="123.0" stylesheets="@../Css/confignotificacoes.css" text="Desativar" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

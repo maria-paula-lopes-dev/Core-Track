@@ -1,0 +1,362 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    /* ======= CORES BASE ======= */
+    /*
+
+    Background: #032221
+
+    Cor lateral: #03624c
+
+    Detalhes: #2cc295
+
+    Branco: #ffffff
+
+    Vermelho: #ff0000
+    
+    Azul: #0038FF
+
+    */
+
+    /* ======= LABELS ======= */
+
+    #lblCoreTrack{
+        -fx-fonnt-family: "Verdana";
+        -fx-font-size: 16px;
+        -fx-font-weight: bold;
+        -fx-text-fill: #ffffff;
+    }
+
+    #lblTitulo{
+        -fx-fonnt-family: "Verdana";
+        -fx-font-size: 30px;
+        -fx-font-weight: bold;
+        -fx-text-fill: #ffffff;
+    }
+
+    /* ======= LABELS HOVER ======= */
+
+    #lblCoreTrack:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #lblTitulo:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    /* ======= BOTÕES ======= */
+
+    #btnConfiguracoes{
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+    }
+
+    #btnNotificacoes{
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+    }
+
+    #btnRelatorios{
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+    }
+
+    #btnGraficos{
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+    }
+
+    #btnSaibaMais{
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+    }
+
+    #btnVoltar{
+        -fx-background-color: #2cc295;
+        -fx-text-fill: #0038FF;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+    }
+
+    #menuNotificacoes{
+
+    }
+
+    /* ======= BOTÕES HOVER ======= */
+
+    #btnConfiguracoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnNotificacoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0); 
+        -fx-text-fill: #ff0000
+    }
+
+    #btnSaibaMais:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnGraficos:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnRelatorios:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnVoltar:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(0, 56, 255,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #menuNotificacoes:hover{
+
+    }
+
+    /* ======= BOXES ======= */
+
+    #anNotificacoes{
+        -fx-background-color: #032221;
+        -fx-effect: dropshadow(three-pass-box, rgb(0,0,0,0.8), 10, 0, 0, 0);
+        -fx-border-radius: 7px; 
+        -fx-background-radius: 7px;
+    }    
+
+    #hBoxNotificacoes{
+        -fx-background-color: #032221;
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-border-radius: 7px; 
+        -fx-background-radius: 7px;
+    }
+
+    #vBoxLateralNotificacoes{
+        -fx-background-color: #03624c;
+        -fx-effect: dropshadow(three-pass-box, rgb(0,0,0,0.8), 10, 0, 0, 0);
+        -fx-border-radius: 7px; 
+        -fx-background-radius: 7px;
+    }
+
+    #vBoxNotificacoes{
+        -fx-background-color: #032221;
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-border-radius: 7px; 
+        -fx-background-radius: 7px;
+    }
+
+
+    /* ======= BOXERS HOVER ======= */
+
+    #vBoxNotificacoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #vBoxLateralNotificacoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    /* ======= IMAGENS HOVER ======= */
+
+    #imgCoreTrack:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(255, 0, 0,0.8), 10, 0, 0, 0);
+    }
+
+    #imgPerfil:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0); 
+    }
+
+    #imgConfiguracoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #imgNotificacoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #imgGraficos:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #imgRelatorios:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #imgSaibaMais:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    /* ======= LISTVIEW ======= */
+
+    #lstNotificacoes{
+        -fx-background-color: #2cc295;
+        -fx-border-color: #00DF81;
+        -fx-border-width: 2;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-padding: 5;
+        -fx-font-family: "Verdana";
+        -fx-font-size: 13px;
+        -fx-text-fill: #032221;
+    }
+
+    /* ======= ITENS DO LISTVIEW ======= */
+    .list-cell {
+        -fx-background-color: transparent;
+        -fx-text-fill: #032221;
+        -fx-font-size: 14px;
+        -fx-padding: 10;
+        -fx-alignment: CENTER_LEFT;
+    }
+
+    .list-cell:filled:selected, .list-cell:filled:hover {
+        -fx-background-color: #03624C;
+        -fx-text-fill: #F1F7F6;
+        -fx-cursor: hand;
+    }
+
+    /* ======= SCROLL BAR ======= */
+    .scroll-bar:vertical .thumb {
+        -fx-background-color: #00DF81;
+        -fx-background-radius: 5;
+    }
+
+    .scroll-bar:vertical .track {
+        -fx-background-color: #032221;
+        -fx-background-radius: 5;
+    }
+
+    /* ======= MENU BUTTON - CORETRACK ======= */
+    #menuNotificacoes {
+        -fx-background-color: #032221;       
+        -fx-text-fill: #ffffff;             
+        -fx-font-family: "Verdana";
+        -fx-font-size: 13px;
+        -fx-font-weight: bold;
+        -fx-border-color: #2cc295;           
+        -fx-border-width: 2;
+        -fx-border-radius: 8px;
+        -fx-background-radius: 8px;
+        -fx-cursor: hand;
+        -fx-padding: 6 14 6 14;
+        -fx-alignment: CENTER;
+        -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 0, 0);
+    }
+
+    /* ======= HOVER / FOCUS ======= */
+    #menuNotificacoes:hover, 
+        #menuNotificacoes:focused {
+        -fx-background-color: #03624C;       
+        -fx-text-fill: #00DF81;              
+        -fx-effect: dropshadow(three-pass-box, rgba(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    /* ======= SETA DO MENU ======= */
+    #menuNotificacoes .arrow {
+        -fx-background-color: #00DF81;      
+    }
+
+    /* ======= ITENS DO MENU ======= */
+    #menuNotificacoes .menu-item {
+        -fx-background-color: #032221;      
+        -fx-text-fill: #ffffff;
+        -fx-font-family: "Verdana";
+        -fx-font-size: 12px;
+        -fx-padding: 6 10 6 10;
+    }
+
+    /* ======= HOVER NOS ITENS ======= */
+    #menuNotificacoes .menu-item:focused {
+        -fx-background-color: #03624C;       
+        -fx-text-fill: #00DF81;              
+    }
+
+    /* ======= MENU ABERTO (ativo) ======= */
+    #menuNotificacoes:showing {
+        -fx-background-color: #03624C;       /* Fica mais claro quando o menu está aberto */
+        -fx-effect: dropshadow(three-pass-box, rgba(44,194,149,0.6), 15, 0, 0, 0);
+    }
+
+
+    /* Mantendo estilo do botão */
+    #menuNotificacoes {
+        -fx-background-color: #032221;
+        -fx-font-family: "Verdana";
+        -fx-font-size: 13px;
+        -fx-font-weight: bold;
+        -fx-border-color: #2cc295;
+        -fx-border-width: 2;
+        -fx-border-radius: 8px;
+        -fx-background-radius: 8px;
+        -fx-cursor: hand;
+        -fx-padding: 6 14 6 14;
+        -fx-alignment: CENTER;
+        -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 5, 0, 0, 0);
+    }
+
+    /* Texto do botão */
+    #menuNotificacoes .label {
+        -fx-text-fill: #ffffff;
+    }
+
+    /* Hover / Focus do botão */
+    #menuNotificacoes:hover, 
+        #menuNotificacoes:focused {
+        -fx-background-color: #03624C;
+        -fx-effect: dropshadow(three-pass-box, rgba(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #menuNotificacoes:hover .label,
+        #menuNotificacoes:focused .label {
+        -fx-text-fill: #00DF81;
+    }
+
+    /* Seta */
+    #menuNotificacoes .arrow {
+        -fx-background-color: #00DF81;
+    }
+
+    /* Itens do menu */
+    #menuNotificacoes .menu-item {
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-font-family: "Verdana";
+        -fx-font-size: 12px;
+        -fx-padding: 6 10 6 10;
+    }
+
+    #menuNotificacoes .menu-item:focused,
+        #menuNotificacoes .menu-item:hover {
+        -fx-background-color: #03624C;
+        -fx-text-fill: #00DF81;
+    }
+
+
+}

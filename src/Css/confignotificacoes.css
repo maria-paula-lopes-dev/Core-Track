@@ -1,0 +1,301 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    /* ======= CORES BASE ======= */
+    /*
+
+    Background: #032221
+
+    Cor lateral: #03624c
+
+    Detalhes: #2cc295
+
+    Branco: #ffffff
+
+    Vermelho: #ff0000
+    
+    Azul: #0038FF
+    
+    Cinza: #b4b4b4
+
+    */
+
+    /* ======= LABELS ======= */
+
+    #lblConta{
+        -fx-font-family: "Verdana";
+        -fx-font-size: 16px;
+        -fx-font-weight: bold;
+        -fx-font-style: italic;
+        -fx-text-fill: #b4b4b4;
+
+    }
+
+    #lblTitulo{
+        -fx-fonnt-family: "Verdana";
+        -fx-font-size: 30px;
+        -fx-font-weight: bold;
+        -fx-text-fill: #ffffff;
+    }
+
+    #lblFotoPrfil{
+        -fx-font-family: "Verdana";
+        -fx-font-size: 12px;
+        -fx-font-weight: bold;
+        -fx-font-style: italic;
+        -fx-text-fill: #b4b4b4;
+
+    }
+    
+    #lblNotificacoes{
+        -fx-font-family: "Verdana";
+        -fx-font-size: 12px;
+        -fx-font-weight: bold;
+        -fx-font-style: italic;
+        -fx-text-fill: #b4b4b4;
+    }
+    
+    #lblHabilitacoes{
+        -fx-font-family: "Verdana";
+        -fx-font-size: 12px;
+        -fx-font-weight: bold;
+        -fx-font-style: italic;
+        -fx-text-fill: #b4b4b4;
+    }
+
+    /* ======= LABELS HOVER ======= */
+
+    #lblConta:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #lblTitulo:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #lblHabilitacoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #lblNotificacoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+    
+    /* ======= BOTÕES ======= */
+
+    #btnPerfil{
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+    }
+
+    #btnNotificacoes{
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+    }
+
+    #btnRemover{
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+        -fx-border-color: #2cc295;
+        -fx-border-width: 1;
+
+    }
+
+    #btnAtivar{
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+        -fx-border-color: #2cc295;
+        -fx-border-width: 1;
+
+    }
+
+    #btnDesativar{
+        -fx-background-color: #032221;
+        -fx-text-fill: #ffffff;
+        -fx-border-radius: 7px;
+        -fx-background-radius: 7px;
+        -fx-cursor: hand;
+        -fx-font-weight: bold;
+        -fx-border-color: #2cc295;
+        -fx-border-width: 1;
+
+    }
+
+    /* ======= BOTÕES DE IMAGENS ======= */
+
+    #btnHome{
+        -fx-background-color: transparent;
+        -fx-border-color: transparent;
+        -fx-cursor: hand;
+    }
+
+    #btnNotificacoesIcon{
+        -fx-background-color: transparent;
+        -fx-border-color: transparent;
+        -fx-cursor: hand;
+    }
+
+    #btnGraficos{
+        -fx-background-color: transparent;
+        -fx-border-color: transparent;
+        -fx-cursor: hand;
+    }
+
+    #btnRelatorios{
+        -fx-background-color: transparent;
+        -fx-border-color: transparent;
+        -fx-cursor: hand;
+    }
+
+    #btnSaibaMais{
+        -fx-background-color: transparent;
+        -fx-border-color: transparent;
+        -fx-cursor: hand;
+    }
+
+    /* ======= BOTÕES HOVER ======= */
+
+    #btnHome:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44, 194, 149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnNotificacoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnAtivar:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnDesativar:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    /* ======= BOTÕES DE IMAGENS ======= */
+
+    #btnHome:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnNotificacoesIcon:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnGraficos:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnRelatorios:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    #btnSaibaMais:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+        -fx-text-fill: #ff0000
+    }
+
+    /* ======= BOXES ======= */
+
+    #anConfiguracoes{
+        -fx-background-color: #032221;
+        -fx-effect: dropshadow(three-pass-box, rgb(0,0,0,0.8), 10, 0, 0, 0);
+        -fx-border-radius: 7px; 
+        -fx-background-radius: 7px;
+    }
+
+    #vBoxLateralConfiguracoes{
+        -fx-background-color: linear-gradient(to right, #03624c, #09271a);
+        -fx-border-radius: 7px; 
+        -fx-background-radius: 7px;
+    }
+
+    #vBoxOpcoes{
+        -fx-background-color: #03624c;
+    }
+
+    #vBoxConfiguracoesPrincipal{
+        -fx-background-color: #032221;
+        -fx-effect: dropshadow(three-pass-box, rgb(0,0,0,0.8), 10, 0, 0, 0);
+        -fx-border-radius: 7px; 
+        -fx-background-radius: 7px;
+    }
+
+    /* ======= BOXERS HOVER ======= */
+
+    #anConfiguracoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #vBoxLateralConfiguracoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #vBoxConfiguracoesPrincipal:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    /* ======= IMAGENS HOVER ======= */
+
+    #imgCoreTrack:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(255, 0, 0,0.8), 10, 0, 0, 0);
+    }
+
+    #imgNotificacoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44, 194, 149,0.8), 10, 0, 0, 0);
+    }
+
+    #imgGraficos:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44, 194, 149,0.8), 10, 0, 0, 0);
+    }
+
+    #imgRelatorios:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #imgSaibaMais:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #imgInicial:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #imgPerfil:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    #imgNotificacoes:hover{
+        -fx-effect: dropshadow(three-pass-box, rgb(44,194,149,0.8), 10, 0, 0, 0);
+    }
+
+    /* ======= IMAGENS HOVER ======= */
+
+
+
+}
