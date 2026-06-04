@@ -1,3 +1,5 @@
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=b500ff&height=120&section=header"/>
+
 # ✦ CoreTrack
 
 Sistema de monitoramento de desempenho de computadores desenvolvido como Trabalho de Conclusão de Curso (TCC) do curso Técnico em Informática.
@@ -212,3 +214,4 @@ https://www.linkedin.com/in/maria-paula-lopes/
 ⌁ Email:  
 mariapaulalopessilva5@gmail.com
 
+<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=b500ff&height=120&section=footer"/>
