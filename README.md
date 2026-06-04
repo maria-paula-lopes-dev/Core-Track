@@ -1,10 +1,10 @@
-# 🖥️ CoreTrack
+# ✦ CoreTrack
 
 Sistema de monitoramento de desempenho de computadores desenvolvido como Trabalho de Conclusão de Curso (TCC) do curso Técnico em Informática.
 
 ---
 
-## 📌 Visão Geral
+## ✧ Visão Geral
 
 O CoreTrack é uma aplicação desktop que permite acompanhar, em tempo real, o uso de recursos do computador de forma simples e acessível, mesmo para usuários sem conhecimento técnico.
 
@@ -12,163 +12,203 @@ A proposta do sistema é transformar informações técnicas em dados compreens�
 
 ---
 
-## 🎯 Objetivo
+## ✧ Objetivo
 
 Desenvolver uma solução intuitiva e funcional para:
 
-- Monitorar o desempenho do computador  
-- Identificar gargalos e problemas  
-- Sugerir melhorias práticas ao usuário  
+▸ Monitorar o desempenho do computador
+   
+▸ Identificar gargalos e problemas
+  
+▸ Sugerir melhorias práticas ao usuário  
 
 ---
 
-## ⚙️ Funcionalidades
+## ✧ Funcionalidades
 
-- Monitoramento em tempo real:
-  - CPU  
-  - Memória RAM  
-  - Armazenamento  
-  - Temperatura  
-  - Tempo de uso  
+▸ Monitoramento em tempo real:
+  
+  - CPU
+  - Memória RAM
+  - Armazenamento
+  - Temperatura
+  - Tempo de uso
 
-- 🔔 Sistema de notificações:
-  - Alertas críticos  
-  - Informações  
+▸ Sistema de notificações:
+
+  - Alertas críticos
+  - Informações
   - Sugestões  
 
-- 🧹 Limpeza de arquivos temporários  
-- ❌ Encerramento de processos em segundo plano  
-- 👤 Gerenciamento de usuário (nome, e-mail e imagem)  
-- 📊 Visualização de dados do sistema  
+▸ Limpeza de arquivos temporários
+
+▸ Encerramento de processos em segundo plano  
+
+▸ Gerenciamento de usuário (nome, e-mail e imagem) 
+
+▸ Visualização de dados do sistema  
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## ✧ Tecnologias Utilizadas
 
-- ☕ Java  
-- 🖼️ JavaFX  
-- 🎨 CSS  
-- 🗄️ SQL  
-- ⚙️ OSHI (monitoramento de hardware)  
-- 📐 UML (modelagem do sistema)  
+▸ Java
+    
+▸ JavaFX
+  
+▸ CSS
+  
+▸ SQL
+  
+▸ OSHI (monitoramento de hardware)
+  
+▸ UML (modelagem do sistema)  
 
 ---
 
-## 🧠 Abordagem do Projeto
+## ✧ Abordagem do Projeto
 
 Diferente de ferramentas tradicionais, o CoreTrack foi desenvolvido com foco em:
 
-- Simplicidade de uso  
-- Interface intuitiva  
-- Redução da complexidade técnica  
-- Melhor experiência do usuário  
+▸ Simplicidade de uso  
+
+▸ Interface intuitiva  
+
+▸ Redução da complexidade técnica 
+
+▸ Melhor experiência do usuário  
 
 ---
 
-## 📁 Estrutura do Projeto
+## ✧ Estrutura do Projeto
 
-A pasta `src` está organizada da seguinte forma:
+📂 A pasta `src` está organizada da seguinte forma:
 
-- 📂 BancoSql → Scripts e configurações relacionadas ao banco de dados  
-- 📂 Classes → Classes principais do sistema  
-- 📂 Conexao → Conexão com o banco de dados  
-- 📂 Controllers → Controle da lógica entre interface e dados  
-- 📂 coretrackapp → Classe principal da aplicação  
-- 📂 Css → Estilização da interface  
-- 📂 DAOs → Acesso e manipulação de dados no banco  
-- 📂 Fxml → Estrutura das telas (interface gráfica)  
-- 📂 imagens → Recursos visuais do sistema  
-- 📂 libs → Bibliotecas externas utilizadas  
-- 📂 Runnables → Execução de processos do sistema  
-- 📂 Utilitarios → Funções auxiliares e reutilizáveis
+┣ 📁 BancoSql → Scripts e configurações relacionadas ao banco de dados  
+┣ 📁 Classes → Classes principais do sistema  
+┣ 📁 Conexao → Conexão com o banco de dados  
+┣ 📁 Controllers → Controle da lógica entre interface e dados  
+┣ 📁 coretrackapp → Classe principal da aplicação  
+┣ 📁 Css → Estilização da interface  
+┣ 📁 DAOs → Acesso e manipulação de dados no banco  
+┣ 📁 Fxml → Estrutura das telas (interface gráfica)  
+┣ 📁 imagens → Recursos visuais do sistema  
+┣ 📁 libs → Bibliotecas externas utilizadas  
+┣ 📁 Runnables → Execução de processos do sistema  
+┣ 📁 Utilitarios → Funções auxiliares e reutilizáveis
 
 ---
 
-## ▶️ Como Executar
+## ✧ Como Executar
 
-> ⚠️ Este projeto requer configuração de ambiente.
+↳ ※ Este projeto requer configuração de ambiente.
 
-### 📌 Pré-requisitos
+### ◈ Pré-requisitos
 
-- ☕ Java (JDK 8 ou superior)
-- 🛠️ IDE Java:
+▸ Java (JDK 8 ou superior)
+
+▸ IDE Java:
+
   - NetBeans (recomendado)
   - IntelliJ ou Eclipse
-- 🗄️ MySQL
-- 📦 XAMPP (ou similar)
+  
+▸ MySQL
+
+▸ XAMPP (ou similar)
 
 ---
 
-### ⚙️ Passo a passo
+### ◈ Passo a passo
 
-1. Baixe o projeto:
-- Clique em **Code → Download ZIP** no GitHub  
-- Extraia a pasta no seu computador  
-- (ou clone via Git, se preferir)
+◉ **Baixe o projeto:**
 
-2. Inicie o banco de dados:
-- Abra o XAMPP  
-- Inicie o serviço **MySQL**
+▸ Clique em **Code → Download ZIP** no GitHub  
 
-3. Crie e configure o banco:
-- Abra o **phpMyAdmin** (http://localhost/phpmyadmin)  
-- Crie um banco de dados (ex: `coretrack`)  
-- Importe o arquivo: `/src/BancoSql/coretrack.sql`
+▸ Extraia a pasta no seu computador  
 
-4. Configure a conexão:
-- Acesse a pasta `Conexao` no projeto  
-- Ajuste:
+▸ (ou clone via Git, se preferir)
+
+◉ **Inicie o banco de dados:**
+
+▸ Abra o XAMPP  
+
+▸ Inicie o serviço **MySQL**
+
+◉ **Crie e configure o banco:**
+
+▸ Abra o **phpMyAdmin** (http://localhost/phpmyadmin)  
+
+▸ Crie um banco de dados (ex: `coretrack`)  
+
+▸ Importe o arquivo: `/src/BancoSql/coretrack.sql`
+
+◉ **Configure a conexão:**
+
+▸ Acesse a pasta `Conexao` no projeto 
+
+▸ Ajuste:
+
   - usuário (ex: `root`)  
   - senha (geralmente vazia no XAMPP)  
   - porta (padrão: 3306)
 
-5. Abra o projeto na IDE:
-- Abra a pasta do projeto no **NetBeans** (recomendado)  
-- Aguarde a indexação das dependências  
+◉ **Abra o projeto na IDE:**
 
-6. Execute o sistema:
-- Localize a classe principal (`coretrackapp`)  
-- Execute o projeto  
+▸ Abra a pasta do projeto no **NetBeans** (recomendado)  
 
----
+▸ Aguarde a indexação das dependências  
 
-### ⚠️ Observações
+◉ **Execute o sistema:**
 
-- O arquivo `config_usuario.txt` é necessário para o funcionamento  
-- Algumas funcionalidades (como gráficos e relatórios) podem não estar totalmente implementadas  
-- Caso haja erro de conexão, revise as configurações do banco
+▸ Localize a classe principal (`coretrackapp`)
+    
+▸ Execute o projeto  
 
 ---
 
-## 📷 Imagens do Sistema
+### ◈ Observações
 
-### 🖥️ Tela Dados
+▸ O arquivo `config_usuario.txt` é necessário para o funcionamento  
+
+▸ Algumas funcionalidades (como gráficos e relatórios) podem não estar totalmente implementadas 
+
+▸ Caso haja erro de conexão, revise as configurações do banco
+
+---
+
+## ✧ Imagens do Sistema
+
+### ◈ Tela Dados
 ![Tela de Dados](./src/docs/telas/dados.jpeg)
 
-### 💾 Dados Salvos
+### ◈ Dados Salvos
 ![Tela de Dados Savos](./src/docs/telas/sqlDados.jpeg)
 
-### 📊 Tela de Monitoramento
+### ◈ Tela de Monitoramento
 ![Tela Inicial](./src/docs/telas/inicial.jpeg)
 
-### ⚙️ Configurações
+### ◈ Configurações
 ![Tela de Configurações](./src/docs/telas/config-img.jpeg)
 
-### 🔔 Notificações
+### ◈ Notificações
 ![Tela de Notificações](./src/docs/telas/notificacoes.jpeg)
 
-### 📑 Relatórios
+### ◈ Relatórios
 ![Tela de Relatórios](./src/docs/telas/relatorios.jpeg).
 
 ---
 
-## 👩‍💻 Autora
+## ✧ Autora
 
 **Maria Paula Lopes Silva**  
 Técnica em Informática — CEDAF / UFV  
 
-🔗 GitHub:  
+⌁ GitHub:  
 https://github.com/maria-paula-lopes-dev  
 
-💼 LinkedIn:  
+⌁ LinkedIn:  
 https://www.linkedin.com/in/maria-paula-lopes/
+
+⌁ Email:  
+mariapaulalopessilva5@gmail.com
+
